@@ -21,7 +21,7 @@ dnf5 install -y tmux
 
 dnf5 -y copr enable avengemedia/dms
 dnf5 install -y niri dms
-systemctl --user add-wants niri.service dms
+# systemctl --user add-wants niri.service dms
 
 #### Example for enabling a System Unit File
 
