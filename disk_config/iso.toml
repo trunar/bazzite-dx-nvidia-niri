@@ -1,10 +1,5 @@
 [customizations.installer.kickstart]
 contents = """
-repo --name=terra-mesa --setopt=gpgcheck=0
-
-# If you have other terra-related repos causing issues (e.g., 'terra' or 'terra-extras'), add them too:
-# repo --name=terra --setopt=gpgcheck=0
-# repo --name=terra-extras --setopt=gpgcheck=0
 
 %post
 bootc switch --mutate-in-place --transport registry ghcr.io/trunar/bazzite-dx-nvidia-niri:latest
